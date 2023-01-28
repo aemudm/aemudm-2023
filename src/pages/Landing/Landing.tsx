@@ -7,7 +7,6 @@ const Landing = () => {
   return (
     <body>
         <Navbar/>
-        <div>Landing</div>
     </body>
   )
 }
