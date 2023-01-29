@@ -17,8 +17,8 @@ const Main = () => {
             <p>Vivez votre foi librement sur le campus. Que 
                 vous soyez un étudiant des pavillons principaux, d'HEC Montréal ou 
                 encore de l'école Polytechnique, l'AEMUDM se trouve être l'encadrement idéal
-                pour le musulman de l'université. Découvrez une petite communauté remplie
-                de bienveillance, de solidarité et d'épanouissement et de fraternité au sein même de votre école.
+                pour un musulman de l'université. Découvrez une petite communauté remplie
+                de bienveillance, de solidarité, d'épanouissement et de fraternité au sein même de votre école.
             </p>
             <div className="buttonContainer">
                 <Button href='#' content='Découvrez nos activités' />

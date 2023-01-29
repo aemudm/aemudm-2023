@@ -1,6 +1,6 @@
 .button {
     border: 1px solid rgba(255, 255, 255, 0.212);
-    background-color: #315A3F;
+    background-color: #177140;
     border-radius: 20px;
     padding: 8px;
     padding-left: 1rem;
@@ -8,10 +8,10 @@
     transition: 0.3s ease;
     color: white;
 
-    font-weight: 200;
+    font-weight: 400;
     font-size: 14px;
 
     &:hover {
-        background-color: #20462d;
+        background-color: #10532e;
     }
 }
