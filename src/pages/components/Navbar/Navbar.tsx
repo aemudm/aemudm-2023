@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 
 import logo from '../../../assets/logo.jpeg';
+import Button from '../../Landing/components/Button/Button';
 
 const Navbar = () => {
   const links = [
@@ -19,7 +20,7 @@ const Navbar = () => {
         {links.map((link) =>
           <a href={link.link} className='link'>{link.name} <div className="line-container"><div className="line"></div></div></a>
         )}
-        <a href="#" className='button'>Contactez-nous</a>
+        <Button content="Contactez-nous" href="#"/>
       </div>
     </nav>
   )
