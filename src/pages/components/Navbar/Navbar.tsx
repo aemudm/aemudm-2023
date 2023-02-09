@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.scss'
 
-import logo from '../../../assets/logo.jpeg';
+import logo from '../../../assets/logoWhite.png';
 import Button from '../../Landing/components/Button/Button';
 
 const Navbar = () => {
