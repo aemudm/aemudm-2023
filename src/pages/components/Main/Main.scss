@@ -1,71 +1,100 @@
-.container {
-    margin-top: 3rem;
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
+.main {
+    max-width: 1200px;
 
-    .imageSection {
-        min-width: 500px;
-        min-height: 650px;
-        max-height: 600px;
-        box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);
-        position: relative;
+    .container {
+        margin-top: 3rem;
+        width: 100%;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
 
-        .lines {
-            width: 500px;
-            height: 600px;
-            left: 20px;
-            bottom: 20px;
-            border-bottom: 1px solid white;
-            border-right: 1px solid white;
-            position: absolute;
+        .imageSection {
+            min-width: 500px;
+            min-height: 650px;
+            max-height: 600px;
+            box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);
+            position: relative;
+
+            .lines {
+                width: 500px;
+                height: 600px;
+                left: 20px;
+                bottom: 20px;
+                border-bottom: 1px solid white;
+                border-right: 1px solid white;
+                position: absolute;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid rgba(255, 255, 255, 0.023);
+                border-radius: 5px;
+            }
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 1px solid rgba(255, 255, 255, 0.023); 
-            border-radius: 5px;  
-        }
-    }
+        .introSection {
+            margin-left: 2rem;
 
-    .introSection {
-        margin-left: 4rem;
+            h6 {
+                color: grey;
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                line-height: 0px;
+            }
 
-        h6 {
-            color: grey;
-            font-size: 14px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            line-height: 0px;
-        }
+            h1 {
+                color: white;
+                font-size: 50px;
+                font-weight: 500;
+                margin: none;
+                line-height: 55px;
+            }
 
-        h1 {
-            color: white;
-            font-size: 50px;
-            font-weight: 500;
-            margin: none;
-            line-height: 55px;
-        }
+            .line {
+                width: 100px;
+                height: 2px;
+                background-color: white;
+            }
 
-        .line {
-            width: 100px;
-            height: 2px;
-            background-color: white;
-        }
+            p {
+                color: gray;
+                font-weight: 300;
+                text-align: justify;
+                font-size: 15px;
+                margin-top: 4rem;
+            }
 
-        p {
-            color: gray;
-            font-weight: 300;
-            text-align: justify;
-            font-size: 15px;
-            margin-top: 4rem;
-        }
-
-        .buttonContainer {
-            margin-top: 6rem;
+            .buttonContainer {
+                margin-top: 6rem;
+            }
         }
     }
 }
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+    .imageSection {
+        display: none;
+    }
+
+    .introSection {
+        margin-right: 2rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

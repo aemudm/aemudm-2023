@@ -1,12 +1,17 @@
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    max-width: 1200px;
 
-    h2, a {
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h2,
+    a {
         font-family: "Poppins", sans-serif;
         text-decoration: none;
     }
@@ -29,10 +34,14 @@ nav {
         align-items: center;
         gap: 2rem;
 
+        @media (max-width: 767.98px) {
+            display: none;
+        }
+
         a {
             font-size: 13px;
             font-weight: 400;
-            
+
         }
 
         .link {
@@ -50,15 +59,99 @@ nav {
                 bottom: 0;
                 height: 1px;
                 width: 0%;
-                border-bottom:2px solid white;
+                border-bottom: 2px solid white;
                 transition: 0.5s ease;
             }
 
-            &:hover {               
+            &:hover {
                 &:before {
                     width: 100%;
                 }
             }
         }
     }
+
+    .dropdown-menu {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        background-color: #177140;
+        padding: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.212);
+        transition: 0.3s ease;
+
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #10532e;
+        }
+
+        .menu {
+            position: absolute;
+            width: 150px;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 0.949);
+            border-radius: 20px;
+            top: 100px;
+            right: 20px;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: -1;
+            opacity: 0;
+
+            transition: 0.3s ease;
+
+            .link {
+                padding: 1rem 10px;
+                border-radius: 10px;
+                transition: 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                }
+            }
+        }
+
+        .toggled {
+            opacity: 100;
+            z-index: 1;
+        }
+
+        @media (max-width: 767.98px) {
+            display: flex;
+        }
+    }
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    .links {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

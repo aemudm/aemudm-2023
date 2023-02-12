@@ -12,4 +12,4 @@ const Button = ({href, content}: ButtonProps) => {
   )
 }
 
-export default Button
+export default Button;
