@@ -1,0 +1,14 @@
+.activities-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    .activities {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 3rem;
+
+        flex-wrap: wrap;
+    }
+}

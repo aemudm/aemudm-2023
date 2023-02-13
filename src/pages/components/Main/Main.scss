@@ -1,16 +1,18 @@
 .main {
     max-width: 1200px;
+    margin-bottom: 100px;
 
-    .container {
+    .main-container {
         margin-top: 3rem;
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         display: flex;
         justify-content: center;
+        gap: 4rem;
 
         .imageSection {
             min-width: 500px;
-            min-height: 650px;
+            min-height: 850px;
             max-height: 600px;
             box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);
             position: relative;
@@ -47,10 +49,10 @@
 
             h1 {
                 color: white;
-                font-size: 50px;
+                font-size: 60px;
                 font-weight: 500;
                 margin: none;
-                line-height: 55px;
+                line-height: 80px;
             }
 
             .line {
@@ -60,15 +62,15 @@
             }
 
             p {
-                color: gray;
+                color: rgb(182, 182, 182);
                 font-weight: 300;
                 text-align: justify;
-                font-size: 15px;
+                font-size: 18px;
                 margin-top: 4rem;
             }
 
             .buttonContainer {
-                margin-top: 6rem;
+                margin-top: 4rem;
             }
         }
     }
@@ -87,12 +89,20 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 1199.98px) {
-    .imageSection {
-        display: none;
-    }
+    .main-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
 
-    .introSection {
-        margin-right: 2rem;
+        .imageSection {
+            margin-top: 3rem;
+            width: 94%;
+            height: 400px;
+        }
+
+        .introSection {
+            margin-right: 2rem;
+        }
     }
 }
 
