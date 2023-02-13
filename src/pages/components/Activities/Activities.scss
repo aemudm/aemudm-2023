@@ -1,7 +1,13 @@
 .activities-section {
     margin-top: 100px;
     margin-bottom: 100px;
-    
+
+    h1 {
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+    }
+
     .activities {
         display: flex;
         justify-content: center;
