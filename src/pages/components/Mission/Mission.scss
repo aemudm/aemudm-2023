@@ -1,5 +1,5 @@
 .mission {
-
+    max-width: 1200px;
     @media screen and (max-width: 1200px) {
         width: 100%;
     }
@@ -50,7 +50,6 @@
             
 
             .text {
-                margin-bottom: 2rem; 
                 display: flex;
                 flex-direction: column;
                 align-items: end;

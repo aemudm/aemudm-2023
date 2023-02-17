@@ -12,9 +12,26 @@ const Activities = () => {
     <div className='activities-section'>
         <h1>Nos activités</h1>
         <div className="activities">
-            <Card title='Activités annuelles' image={iftar} description=''/>
-            <Card title='Activités réccurentes' image={dua} description=''/>
-            <Card title='Activités ponctuelles' image={basket} description=''/>
+            <Card
+                title='Activités annuelles'
+                image={iftar}
+                description='Semaine interculturelle, journée des comités, conférence
+                annuelle, souper des membres, soirée Iftar durant le mois de ramadan, après-midi BBQ.'
+            />
+
+            <Card
+                title='Activités réccurentes'
+                image={dua}
+                description='Prière du vendredi, halaqa hebdomadaire, séances de foot, exégèse du coran, 5@7,
+                bibliothèque islamique.'
+            />
+
+            <Card
+                title='Activités ponctuelles'
+                image={basket}
+                description='Sports, cabane à sucre, forum de discussion, chalet des membres, aide humanitaire,
+                ateliers divers, book club.'
+            />
         </div>
     </div>
   )

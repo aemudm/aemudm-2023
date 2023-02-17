@@ -1,6 +1,6 @@
-.activities-section {
+.structure {
     max-width: 1200px;
-    margin-bottom: 250px;
+    padding: 0px 32px;
 
     h1 {
         font-size: 70px;
@@ -13,13 +13,11 @@
         }
     }
 
-    .activities {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        gap: 3rem;
-
-        flex-wrap: wrap;
+    p {
+        width: 100%;
+        color: rgb(156, 156, 156);
+        font-weight: 300;
+        font-size: 18px;
+        text-align: justify;
     }
 }

@@ -39,7 +39,7 @@ const Navbar = () => {
           {links.map((link) =>
             <a href={link.link} className='link'>{link.name} <div className="line-container"><div className="line"></div></div></a>
           )}
-          <Button content="Contactez-nous" href="#" />
+          <Button content="Contactez-nous" href="#" clickFunction={''}/>
         </div>
 
         <div className="dropdown-menu" onClick={handleClick}>

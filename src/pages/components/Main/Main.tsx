@@ -22,7 +22,7 @@ const Main = () => {
                         de bienveillance, de solidarité, d'épanouissement et de fraternité au sein même de votre école.
                     </p>
                     <div className="buttonContainer">
-                        <Button href='#' content='Découvrez nos activités' />
+                        <Button href='#' content='Découvrez nos activités' clickFunction={''}/>
                     </div>
 
                 </div>

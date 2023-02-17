@@ -4,14 +4,13 @@
   font-family: Poppins, sans-serif;
 }
 
-body {
-  background-color: #162521;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
 p, h1, h2, h3, h4, h5, h6, a, div {
   color: #177140;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
