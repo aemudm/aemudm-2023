@@ -9,7 +9,7 @@ import basket from '../../../assets/basket.png'
 
 const Activities = () => {
   return (
-    <div className='activities-section'>
+    <div className='activities-section' id='activities'>
         <h1>Nos activités</h1>
         <div className="activities">
             <Card

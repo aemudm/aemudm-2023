@@ -6,7 +6,7 @@ import Button from '../../Landing/components/Button/Button';
 
 const Main = () => {
     return (
-        <div className="main">
+        <div className="main" id='main'>
             <div className="main-container">
                 <div className="imageSection">
                     <img src={gathering} alt="" />

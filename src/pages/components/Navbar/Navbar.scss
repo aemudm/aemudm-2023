@@ -1,6 +1,5 @@
 nav {
     max-width: 1200px;
-    padding: 0px 32px;
 
     .container {
         width: 100%;
@@ -94,7 +93,7 @@ nav {
         .menu {
             position: absolute;
             width: 150px;
-            height: 250px;
+            height: 300px;
             background-color: rgba(255, 255, 255, 0.949);
             border-radius: 20px;
             top: 100px;
@@ -139,6 +138,7 @@ nav {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {
+
     .links {
         display: none;
     }
@@ -152,7 +152,11 @@ nav {
 @media (max-width: 991.98px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    nav {
+        padding: 0px 32px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

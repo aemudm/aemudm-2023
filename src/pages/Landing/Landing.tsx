@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
+
 import './Landing.scss'
 
 import Navbar from '../components/Navbar/Navbar';
@@ -12,6 +14,7 @@ import Comites from '../components/Comites/Comites';
 
 const Landing = () => {
   return (
+    <BrowserRouter>
     <body>
       <Navbar />
       <Main />
@@ -24,6 +27,7 @@ const Landing = () => {
       <Structure />
       <Comites />
     </body>
+    </BrowserRouter>
   )
 }
 
