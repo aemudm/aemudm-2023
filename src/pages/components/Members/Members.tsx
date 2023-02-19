@@ -31,22 +31,25 @@ const Members = () => {
                 <div className="implication">
 
                     <div className="description">
-                        <h2>Devenez membre</h2>
                         <p>L'association est administrée par un président, des vices-présidents, un/une secrétaire, un trésorier, un VP administration et un VP externe. Ces rôles assurent le bon fonctionnement de l'association afin de continuer de la faire briller de manière perpétuelle et organisée. Cependant, ce ne sont pas les seuls rôles dont l'association a besoin. Faites le pas et devenez un membre actif ou encore un bénévole, nous vous accueillerons à bras grands ouverts.</p>
-
-
-                        <div className="buttonsContainer">
-                            <div className="buttons">
-                                <Button href='https://docs.google.com/forms/d/e/1FAIpQLSeWySby7gofUAtlFF5AZ9ZgoCFRgtUIJHvmmDjKFsN2XxH5LQ/closedform' clickFunction={''} content='Devenir membre' />
-                                <Button href='https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PEDJ5XEWXD7VJ&source=url' clickFunction={''} content='Faire un don' />
-                            </div>
-                        </div>
 
                     </div>
 
                     <div className="cards">
                         <Card title='Membre actif' image={membres} description="Chaque membre actif est lié à un comité respectif et a comme responsabilité de participer aux divers rencontres de son comité et de contribuer à l'avancement de ses projets et de ses activités." />
                         <Card title='Bénévole' image={volunteers} description="Le/la bénévole actif(ve) n'est affilié à aucun comité en particulier et est sollicité lorsqu'un VP a besoin de soutien. Il joue tout de même un rôle crucial dans l'associacion et est grandement apprécié et bien accueilli par l'ensemble de l'équipe." />
+
+                        <div className="becomeCard">
+                            <h1 className="title">
+                                Devenez membre
+                            </h1>
+                            <div className="buttonsContainer">
+                                <div className="buttons">
+                                    <Button href='https://docs.google.com/forms/d/e/1FAIpQLSeWySby7gofUAtlFF5AZ9ZgoCFRgtUIJHvmmDjKFsN2XxH5LQ/closedform' content='Appliquer' clickFunction={''}/>
+                                    <Button href='https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=PEDJ5XEWXD7VJ&source=url' content='Faire un don' clickFunction={''}/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
