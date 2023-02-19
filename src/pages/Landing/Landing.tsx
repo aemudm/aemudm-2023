@@ -11,10 +11,10 @@ import Mission from '../components/Mission/Mission';
 import Activities from '../components/Activities/Activities';
 import Structure from '../components/Structure/Structure';
 import Comites from '../components/Comites/Comites';
+import Members from '../components/Members/Members';
 
 const Landing = () => {
   return (
-    <BrowserRouter>
     <body>
       <Navbar />
       <Main />
@@ -26,8 +26,8 @@ const Landing = () => {
       <Activities />
       <Structure />
       <Comites />
+      <Members />
     </body>
-    </BrowserRouter>
   )
 }
 

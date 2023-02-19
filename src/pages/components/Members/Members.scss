@@ -1,0 +1,158 @@
+.members {
+    max-width: 1200px;
+    margin-bottom: 100px;
+    padding: 0px 32px;
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        @media screen  and (max-width: 600px){
+            align-items: center;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h1 {
+                font-size: 45px;
+                font-weight: 500;
+                color: #457466;
+                margin: none;
+                padding: none;
+
+                @media screen and (max-width: 600px) {
+                    text-align: center;
+                    font-size: 40px;
+                }
+            }
+
+            .infoButton {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+
+                transition: 0.3s ease;
+
+                &:hover {
+                    background-color: #4574664e;
+
+                    .information {
+                        transform: translateY(-20px);
+                        opacity: 0.9;
+                        z-index: 5;
+                    }
+                }
+
+                .information {
+                    z-index: -5;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 250px;
+                    height: 150px;
+
+                    margin-bottom: 200px;
+                    margin-right: 100px;
+
+                    background-color: white;
+                    border-radius: 10px;
+
+                    padding: 1rem;
+
+                    opacity: 0;
+
+                    transition: 0.3s ease;
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.461);
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .implication {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .cards {
+                gap: 2rem;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: rgb(195, 195, 195);
+                    margin: 0;
+                }
+
+                p {
+                    text-align: justify;
+                    color: gray;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+
+                .buttonsContainer {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: end;
+
+                    .buttons {
+                        width: 380px;
+                        gap: 1rem;
+                        margin-bottom: 1rem;
+                        margin-top: 3rem;
+
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                    }
+                }   
+            }
+
+            @media screen and (max-width: 1280px) {
+                justify-content: center;
+
+                .cards {
+                    justify-content: center;
+                }
+
+                .description {
+                    width: 100%;
+
+                    .buttonsContainer {
+                        justify-content: center;
+                    }
+                }
+            }
+
+            @media screen  and (max-width: 600px){
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

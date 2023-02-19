@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const Button = ({href, content, clickFunction}: ButtonProps) => {
   return (
-    <a href={href} className='button' onClick={clickFunction}>{content}</a>
+    <a href={href} className='button' onClick={clickFunction} target='_blank'>{content}</a>
   )
 }
 

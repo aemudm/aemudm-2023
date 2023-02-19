@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, HashRouter } from 'react-router-dom';
 import './Navbar.scss'
 
 import logo from '../../../assets/logoWhite.png';
@@ -31,10 +31,10 @@ const Navbar = () => {
   }
 
   const links = [
-    { name: 'Accueil', link: '#', icon: house, id: '#main' },
-    { name: 'Activités', link: '#', icon: soccerBall, id: '#activities'},
-    { name: "S'impliquer", link: '#', icon: hands, id: '#structure' },
-    { name: 'Références', link: '#', icon: book, id: '#references' }
+    { name: 'Accueil', link: '#', icon: house, id: '/main' },
+    { name: 'Activités', link: '#', icon: soccerBall, id: '/activities'},
+    { name: "S'impliquer", link: '#', icon: hands, id: '/structure' },
+    { name: 'Références', link: '#', icon: book, id: '/references' }
   ]
 
   const responsiveLinks = [
@@ -46,6 +46,7 @@ const Navbar = () => {
   ]
 
   return (
+    <HashRouter>
     <nav className='Navbar'>
       <div className="container">
         <a href="#" className='logo'><img src={logo} alt="AEMUDM" /></a>
@@ -67,7 +68,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      
     </nav>
+    </HashRouter>
   )
 }
 

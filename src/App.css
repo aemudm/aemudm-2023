@@ -4,6 +4,10 @@
   align-items: center;
 
   background-color: #162521;
+  background-image: url('./assets/blobs.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   width: 100%;
   height: 100%;
