@@ -12,6 +12,7 @@ import Activities from '../components/Activities/Activities';
 import Structure from '../components/Structure/Structure';
 import Comites from '../components/Comites/Comites';
 import Members from '../components/Members/Members';
+import Footer from '../components/Footer/Footer';
 
 const Landing = () => {
   return (
@@ -27,6 +28,7 @@ const Landing = () => {
       <Structure />
       <Comites />
       <Members />
+      <Footer />
     </body>
   )
 }
