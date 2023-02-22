@@ -1,7 +1,9 @@
 .contactSection {
     max-width: 1200px;
     margin: 0;
-    padding: 100px 2rem;
+    padding-top: 200px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
 
     display: flex;
@@ -15,6 +17,7 @@
         flex-direction: column;
 
         background-color: #0E2018;
+        border: 2px solid rgba(43, 103, 77, 0.04);
         border-radius: 15px;
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.114);
 
@@ -43,6 +46,9 @@
 
         .contactForm {
             width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
 
             ul {
                 width: 100%;
@@ -62,6 +68,7 @@
                 border-radius: 10px;
                 text-indent: 10px;
                 border: 2px solid #264038;
+                box-sizing: border-box;
 
                 transition: 0.3s ease;
 
@@ -140,16 +147,20 @@
                 margin: 0;
                 padding: 0;
                 background-color: #177140;
-                border-radius: 30px;
+                border-radius: 10px;
 
                 cursor: pointer;
 
-                transition: 0.3s ease;
+                transition: all 0.2s ease;
 
                 border: 1px solid rgba(255, 255, 255, 0.174);
 
                 &:hover {
                     background-color: #10532e;
+                }
+
+                &:active {
+                    background-color: #0e1e15;
                 }
             }
 

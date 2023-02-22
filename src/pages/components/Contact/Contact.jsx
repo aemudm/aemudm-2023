@@ -6,6 +6,8 @@ import './Contact.scss'
 const Contact = () => {
     const refForm = useRef()
 
+    const [buttonMessage, setButtonMessage] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault()
 

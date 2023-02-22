@@ -1,5 +1,6 @@
 .main {
     width: 100%;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
 
@@ -81,6 +82,9 @@
 
             .buttonContainer {
                 margin-top: 4rem;
+                padding: 0;
+                height: 50px;
+                transition: 0.3s ease;
             }
         }
     }

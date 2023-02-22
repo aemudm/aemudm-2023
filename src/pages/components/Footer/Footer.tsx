@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.scss'
-
+import { HashLink as Link} from 'react-router-hash-link';
 import logo from '../../../assets/logoWhite.png';
 
 import { BsInstagram, BsFacebook, BsTwitter, BsYoutube } from 'react-icons/bs'
@@ -13,12 +13,11 @@ const youTubeLogo = <BsYoutube size={'25px'} color='white' />
 const Footer = () => {
 
     const links = [
-        { name: 'Accueil', link: '#', id: '/main' },
-        { name: 'Activités', link: '#', id: '/activities' },
-        { name: "S'impliquer", link: '#', id: '/structure' },
-        { name: 'Références', link: '#', id: '/references' },
-        { name: 'Nous contacter', link: '#', id: '/references' }
-    ]
+        { name: 'Accueil', link: '#', id: '#main' },
+        { name: 'Activités', link: '#', id: '#activities'},
+        { name: "Structure", link: '#', id: '#structure' },
+        { name: "S'impliquer", link: '#', id: '#members' },
+      ]
 
     const socialLinks = [
         { icon: instaLogo, link: 'https://www.instagram.com/aemudm/' },
@@ -43,7 +42,7 @@ const Footer = () => {
                         <ul>
                             {links.map((link) =>
                                 <li>
-                                    <a href="">{link.name}</a>
+                                    <Link to={link.id} smooth><a href={link.id}>{link.name}</a></Link>
                                 </li>
                             )}
                         </ul>
