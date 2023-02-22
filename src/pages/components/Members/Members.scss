@@ -19,11 +19,13 @@
             gap: 1rem;
 
             h1 {
+                position: relative;
                 font-size: 45px;
                 font-weight: 500;
                 color: #457466;
                 margin: none;
                 padding: none;
+
 
                 @media screen and (max-width: 600px) {
                     text-align: center;
@@ -120,6 +122,11 @@
                     background-image: url('../../../assets/backgroundBlob.png');
                     background-repeat: no-repeat;
                     background-size: cover;
+
+                    @media screen and (max-width: 600px) {
+                        width: 250px;
+                        height: 450px;
+                    }
 
                     &:hover {
                         box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);

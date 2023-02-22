@@ -1,12 +1,16 @@
 .footer {
-    max-width: 1200px;
+    position: relative;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     padding-bottom: 3rem;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin: 0;
+
+    @media screen and (max-width: 575.98px) {
+        width: 350px;
+    }
 
     p {
         color: gray;

@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashLink as Link} from 'react-router-hash-link';
 
 import './Landing.scss'
 
@@ -13,22 +14,26 @@ import Structure from '../components/Structure/Structure';
 import Comites from '../components/Comites/Comites';
 import Members from '../components/Members/Members';
 import Footer from '../components/Footer/Footer';
+import Contact from '../components/Contact/Contact';
+import ScrollToTop from './components/Button/ScrollToTop';
 
 const Landing = () => {
   return (
     <body>
-      <Navbar />
-      <Main />
-      <Campuses />
-      <div className="info">
+      <BrowserRouter>
+        <Navbar />
+        <Main />
+        <Campuses />
         <Who />
         <Mission />
-      </div>
-      <Activities />
-      <Structure />
-      <Comites />
-      <Members />
-      <Footer />
+        <Activities />
+        <Structure />
+        <Comites />
+        <Members />
+        <Contact />
+        <Footer />
+      </BrowserRouter>
+      <ScrollToTop />
     </body>
   )
 }

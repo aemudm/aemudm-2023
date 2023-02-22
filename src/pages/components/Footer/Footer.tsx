@@ -33,7 +33,9 @@ const Footer = () => {
                 <div className="leftSection">
                     <img src={logo} alt="" />
                     <h2>Merci de votre visite</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus rerum, vitae alias dolorum eligendi, at facere quidem modi perferendis in cum placeat provident voluptatem! Vel blanditiis consequatur quis non quia.</p>
+                    <p>Merci pour votre visite! Il nous fera un grand plaisir de vous accueillir 
+                        dans notre association. Vivez votre foi librement sur le campus. Que vous soyez un étudiant des pavillons principaux, d'HEC Montréal ou encore de l'école Polytechnique, l'AEMUDM se trouve être l'encadrement idéal pour un musulman de l'université.
+                    </p>
                 </div>
                 <div className="rightSection">
                     <div className="footerLinks">
@@ -55,7 +57,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p>Copyright © 2023 - AEMUDM - Developed in Montreal, Canada.</p>
+            <p className='copyright'>Tous droits réservés © 2023 - AEMUDM - Développé à Montréal, Canada.</p>
         </div>
     )
 }

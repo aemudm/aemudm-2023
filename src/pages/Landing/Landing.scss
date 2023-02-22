@@ -1,3 +1,10 @@
-.info {
-    border-radius: 15px;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #162521;
+    margin: 0;
+    padding: 0;
 }

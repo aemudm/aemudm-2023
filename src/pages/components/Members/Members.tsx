@@ -12,7 +12,7 @@ const infoIcon = <IoMdInformationCircleOutline size={'28px'} color='rgb(255, 255
 
 const Members = () => {
     return (
-        <div className='members'>
+        <div className='members' id='members'>
             <div className="container">
                 <div className="title">
                     <h1>Les rôles</h1>

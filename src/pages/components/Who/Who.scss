@@ -1,5 +1,5 @@
 .who {
-    max-width: 1200px;
+    width: 100%;
 
     .title {
 
@@ -7,7 +7,12 @@
             color: #457466;
             font-size: 60px;
             font-weight: 500;
-            line-height: 55px;
+            line-height: 60px;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 50px;
+            }
         }
     }
 

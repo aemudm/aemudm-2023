@@ -1,5 +1,7 @@
 .main {
-    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     .main-container {
         margin-top: 3rem;
@@ -54,8 +56,13 @@
                 color: white;
                 font-size: 50px;
                 font-weight: 500;
-                margin: none;
+                margin: 0;
+                margin-bottom: 1rem;
                 line-height: 60px;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 45px;
+                }
             }
 
             .line {
@@ -99,7 +106,7 @@
 
         .imageSection {
             margin-top: 3rem;
-            width: 94%;
+            width: 370px;
             height: 400px;
         }
 

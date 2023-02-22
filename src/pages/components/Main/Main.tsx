@@ -1,6 +1,8 @@
 import React from 'react';
 import './Main.scss';
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 import gathering from '../../../assets/gathering.png'
 import Button from '../../Landing/components/Button/Button';
 
@@ -22,7 +24,7 @@ const Main = () => {
                         de bienveillance, de solidarité, d'épanouissement et de fraternité au sein même de votre école.
                     </p>
                     <div className="buttonContainer">
-                        <Button href='#' content='Découvrez nos activités' clickFunction={''}/>
+                        <Link to='#activities' smooth><Button href='#' content='Découvrez nos activités' clickFunction={''}/></Link>
                     </div>
 
                 </div>
