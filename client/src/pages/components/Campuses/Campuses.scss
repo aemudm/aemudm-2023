@@ -1,0 +1,27 @@
+.campuses-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 0px 32px;
+
+    max-width: 1200px;
+    
+    height: 250px;
+
+    @media screen and (max-width: 726px) {
+        gap: 2rem;
+        height: 250px;
+    }
+
+    img {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+
+        @media screen and (max-width: 726px) {
+            width: 200px;
+        }
+    }
+}

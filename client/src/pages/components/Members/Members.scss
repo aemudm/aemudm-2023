@@ -1,0 +1,189 @@
+.members {
+    max-width: 1200px;
+    padding-top: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        @media screen and (max-width: 600px) {
+            align-items: center;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h1 {
+                position: relative;
+                font-size: 45px;
+                font-weight: 500;
+                color: #457466;
+
+
+                @media screen and (max-width: 600px) {
+                    text-align: center;
+                    font-size: 40px;
+                }
+            }
+
+            .infoButton {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+
+                transition: 0.3s ease;
+
+                &:hover {
+                    background-color: #4574664e;
+
+                    .information {
+                        transform: translateY(-20px);
+                        opacity: 0.9;
+                        z-index: 5;
+                    }
+                }
+
+                .information {
+                    z-index: -5;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 250px;
+                    height: 150px;
+
+                    margin-bottom: 200px;
+                    margin-right: 100px;
+
+                    background-color: white;
+                    border-radius: 10px;
+
+                    padding: 1rem;
+
+                    opacity: 0;
+
+                    transition: 0.3s ease;
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.461);
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .implication {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .cards {
+                width: 100%;
+                gap: 2rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .becomeCard {
+                    position: relative;
+                    width: 300px;
+                    height: 500px;
+
+                    border-radius: 15px;
+                    border: 2px solid rgb(22, 48, 37);
+                    padding: 2rem;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                    box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.178);
+
+                    cursor: pointer;
+
+                    transition: 0.3s ease;
+
+                    background-image: url('../../../assets/backgroundBlob.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    @media screen and (max-width: 600px) {
+                        width: 250px;
+                        height: 450px;
+                    }
+
+                    &:hover {
+                        box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);
+                        transform: translateY(-30px);
+                    }
+
+                    h1 {
+                        font-weight: 400;
+                        font-size: 40px;
+                        color: rgb(195, 195, 195);
+                        text-align: center;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                    }
+
+                }
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: rgb(195, 195, 195);
+                    margin: 0;
+                }
+
+                p {
+                    color: gray;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 30px;
+                }
+            }
+
+            @media screen and (max-width: 1280px) {
+                justify-content: center;
+
+                .cards {
+                    justify-content: center;
+                }
+
+                .description {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.structure {
+    max-width: 1200px;
+    padding-top: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    h1 {
+        position: relative;
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+
+    p {
+        width: 100%;
+        color: rgb(156, 156, 156);
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

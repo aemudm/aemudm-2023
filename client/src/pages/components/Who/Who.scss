@@ -1,0 +1,51 @@
+.who {
+    width: 100%;
+
+    .title {
+
+        h1 {
+            color: #457466;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 60px;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 600px) {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .line {
+        width: 100px;
+        height: 2px;
+        background-color: #457466;
+    }
+
+    p {
+        color: rgb(156, 156, 156);
+        font-weight: 300;
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 3rem;
+    }
+
+    .who-container {
+        max-width: 1200px;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            width: 60%;
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+            }
+        }
+    }
+}

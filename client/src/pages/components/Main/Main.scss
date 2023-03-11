@@ -1,0 +1,186 @@
+.main {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    .main-container {
+        margin-top: 3rem;
+        max-width: 1200px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        .imageSection {
+            position: relative;
+            min-width: 500px;
+            min-height: 700px;
+            max-height: 600px;
+            box-shadow: 40px 20px 50px rgba(0, 0, 0, 0.398);
+            box-sizing: border-box;
+
+            @media screen and (max-width: 600px) {
+                min-width: 300px;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0;
+                }
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;;
+                width: 100.1%;
+                height: 100.1%;
+                border-radius: 7px;
+                background-color: #166347;
+                /* green color */
+                opacity: 0.2;
+                /* opacity value */
+                transition: 0.3s ease;
+            }
+
+            .buttons {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                padding: 0 1rem;
+                box-sizing: border-box;
+
+                button {
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    background-color: #177140;
+                    border: 1px solid rgba(255, 255, 255, 0.178);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.226);
+
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        background-color: #104e2c;
+                    }
+
+                    &:active {
+                        background-color: #092917;
+                    }
+                }
+            }
+
+            .lines {
+                width: 500px;
+                height: 600px;
+                left: 20px;
+                bottom: 20px;
+                border-bottom: 1px solid white;
+                border-right: 1px solid white;
+                position: absolute;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-bottom: 10px solid rgb(30, 71, 47);
+                border-radius: 5px;
+
+
+                transition: 0.3s ease;
+            }
+
+
+        }
+
+        .introSection {
+            margin-left: 2rem;
+
+            h6 {
+                color: grey;
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                line-height: 0px;
+            }
+
+            h1 {
+                color: white;
+                font-size: 50px;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 1rem;
+                line-height: 60px;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 45px;
+                }
+            }
+
+            .line {
+                width: 100px;
+                height: 2px;
+                background-color: white;
+            }
+
+            p {
+                color: rgb(182, 182, 182);
+                font-weight: 300;
+                line-height: 30px;
+                font-size: 18px;
+                margin-top: 4rem;
+            }
+
+            .buttonContainer {
+                margin-top: 4rem;
+                padding: 0;
+                height: 50px;
+                transition: 0.3s ease;
+            }
+        }
+    }
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+    .main-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .imageSection {
+            margin-top: 3rem;
+            width: 370px;
+            height: 400px;
+        }
+
+        .introSection {
+            margin-right: 2rem;
+        }
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
