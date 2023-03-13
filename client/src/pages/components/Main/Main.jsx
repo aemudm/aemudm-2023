@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Main.scss';
 
 import { HashLink as Link } from 'react-router-hash-link';
@@ -34,6 +34,16 @@ const Main = () => {
     const nextImage = () => {
         setImage((image + 1) % images.length);
     }
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        nextImage();
+      }, 4000);
+    
+      return () => {
+        clearTimeout(timer);
+      }
+    }, [image])
 
     return (
         <div className="main" id='main'>
