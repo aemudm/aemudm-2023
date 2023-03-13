@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && postcss src/**/*.css --use purgecss -o build/static/css/[name].[contenthash:8].css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-hash-link": "^2.4.5"
+    "@types/react-router-hash-link": "^2.4.5",
+    "purgecss": "^5.0.0"
   }
 }
